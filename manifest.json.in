@@ -1,16 +1,17 @@
 {
-    "name": "transmission.pavelprosto",
+    "name": "transmission_remote.davidv.dev",
     "description": "A simple open source BitTorrent client. Ubuntu Touch port",
     "architecture": "@CLICK_ARCH@",
-    "title": "Transmission",
+    "title": "Transmission Remote",
     "hooks": {
         "transmission": {
             "apparmor": "transmission.apparmor",
             "desktop":  "transmission.desktop",
-            "content-hub": "src/content-hub.json"
+            "content-hub": "content-hub.json",
+            "urls": "url-dispatcher.json"
         }
     },
-    "version": "1.0.4",
-    "maintainer": "Pavel Prosto <pavelprosto94@gmail.com>",
+    "version": "1.0.0",
+    "maintainer": "David Ventura <david@davidv.dev>",
     "framework" : "@CLICK_FRAMEWORK@"
 }
